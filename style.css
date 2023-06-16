@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 210, 155);
+  background-image: url("./images/bg.jpg");
+  background-size: 100%;
+  backdrop-filter: blur(4px);
+}
+nav {
+  background-color: #947169;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+.container {
+  width: 50%;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  background-color: rgba(134, 79, 73, 0.7);
+}
+.carousel {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  height: 100%;
+  width: 400%;
+
+  display: flex;
+  flex-direction: row;
+  transition: all 0.2s ease;
+}
+.slider section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addB {
+  position: absolute;
+  bottom: 30px;
+  background-color: #3d2722;
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+section div {
+  background-color: rgb(255, 246, 230);
+  width: 70%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid black;
+}
+.quote {
+  font-style: italic;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin-bottom: 4px;
+}
+.author {
+  font-weight: bolder;
+}
+
+.qMark {
+  width: 80px;
+  height: 100px;
+  z-index: 100;
+}
+
+.qMark.top {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.qMark.bottom {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+}
+
+.control .arrow img {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.arrow.left img {
+  left: 10px;
+}
+.arrow.right img {
+  right: 10px;
+}
+
+.delB {
+  background-color: #3d2722;
+  color: white;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+#favC section {
+  background-color: rgba(134, 79, 73, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
